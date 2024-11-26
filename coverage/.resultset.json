@@ -1,0 +1,220 @@
+{
+  "Minitest": {
+    "coverage": {
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/models/calendar.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          10,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          10,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          10,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          10,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/controllers/calendars_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          9,
+          null,
+          9,
+          9,
+          2,
+          1,
+          null,
+          16,
+          8,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          null,
+          1,
+          10,
+          null,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/helpers/calendars_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/helpers/pages_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/controllers/pages_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/channels/application_cable/channel.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/channels/application_cable/connection.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {}
+      },
+      "/home/wisdom/Documents/GitHub/Ruby-Project/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      }
+    },
+    "timestamp": 1732662393
+  }
+}

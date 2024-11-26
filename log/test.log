@@ -3606,3 +3606,292 @@ Processing by PagesController#home as HTML
   Rendered layout layouts/application.html.erb (Duration: 15.8ms | GC: 2.4ms)
 Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 2.9ms)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "calendars"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "calendars" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "start_time" datetime(6), "end_time" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20241120180905)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'test', '2024-11-26 23:06:33.112979', '2024-11-26 23:06:33.112982') RETURNING "key"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '0f7e6e3541acde6e4fc65dd86ffa80471629ef29', '2024-11-26 23:06:33.113951', '2024-11-26 23:06:33.113953') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mFixtures Load (0.1ms)[0m  [1m[31mDELETE FROM "calendars";
+INSERT INTO "calendars" ("id", "title", "description", "start_time", "end_time", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyText', '2024-11-20 18:09:05', '2024-11-20 18:09:05', '2024-11-26 23:06:33.256875', '2024-11-26 23:06:33.256875');
+INSERT INTO "calendars" ("id", "title", "description", "start_time", "end_time", "created_at", "updated_at") VALUES (298486374, 'MyString', 'MyText', '2024-11-20 18:09:05', '2024-11-20 18:09:05', '2024-11-26 23:06:33.256875', '2024-11-26 23:06:33.256875')[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+CalendarsControllerTest: test_should_get_index
+----------------------------------------------
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  Rendered calendars/_calendar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered calendars/_calendar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 5.6ms | GC: 0.1ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | GC: 0.3ms)
+Completed 200 OK in 23ms (Views: 11.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.8ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_end_time_outside_business_hours
+-------------------------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"MyString", "description"=>"MyText", "start_time"=>"2024-11-20 18:09:05 UTC", "end_time"=>"2024-01-01 22:00:00 +0000"}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 15.9ms | GC: 11.8ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 16.8ms | GC: 11.8ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | GC: 11.8ms)
+Completed 422 Unprocessable Content in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 11.8ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_empty_start_time
+----------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"MyString", "description"=>"MyText", "start_time"=>nil, "end_time"=>"2024-11-20 18:09:05 UTC"}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 2.0ms | GC: 0.2ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 2.2ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_end_time_in_year_2023_or_older
+------------------------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"MyString", "description"=>"MyText", "start_time"=>"2024-11-20 18:09:05 UTC", "end_time"=>"2023-12-31 10:00:00 +0000"}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+CalendarsControllerTest: test_should_get_new
+--------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/calendars/new" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 1.5ms | GC: 0.2ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 1.8ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.2ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+CalendarsControllerTest: test_should_update_calendar
+----------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/calendars/980190962" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#update as HTML
+  Parameters: {"calendar"=>{"description"=>"MyText", "end_time"=>"2024-11-20 18:09:05 UTC", "start_time"=>"2024-11-20 18:09:05 UTC", "title"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Redirected to http://www.example.com/calendars/980190962
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+CalendarsControllerTest: test_should_get_edit
+---------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/calendars/980190962/edit" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCalendar Load (0.0ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/edit.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 1.4ms | GC: 0.2ms)
+  Rendered calendars/edit.html.erb within layouts/application (Duration: 1.8ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.2ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_incomplete_records
+------------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"", "description"=>"MyText", "start_time"=>"2024-11-20 18:09:05 UTC", "end_time"=>"2024-11-20 18:09:05 UTC"}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 2.0ms | GC: 0.2ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 2.2ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+CalendarsControllerTest: test_should_create_calendar
+----------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mCalendar Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "calendars"[0m
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"description"=>"MyText", "end_time"=>"2024-11-20 18:09:05 UTC", "start_time"=>"2024-11-20 18:09:05 UTC", "title"=>"MyString"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalendar Create (0.3ms)[0m  [1m[32mINSERT INTO "calendars" ("title", "description", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["title", "MyString"], ["description", "MyText"], ["start_time", "2024-11-20 18:09:05"], ["end_time", "2024-11-20 18:09:05"], ["created_at", "2024-11-26 23:06:33.424324"], ["updated_at", "2024-11-26 23:06:33.424324"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/calendars/980190963
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.2ms)
+  [1m[36mCalendar Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "calendars"[0m
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" ORDER BY "calendars"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_empty_description
+-----------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"MyString", "description"=>"", "start_time"=>"2024-11-20 18:09:05 UTC", "end_time"=>"2024-11-20 18:09:05 UTC"}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 2.8ms | GC: 0.2ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 3.0ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+CalendarsControllerTest: test_should_show_calendar
+--------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/calendars/980190962" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCalendar Load (0.0ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms (1 query, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_empty_end_time_records
+----------------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"MyString", "description"=>"MyText", "start_time"=>"2024-11-20 18:09:05 UTC", "end_time"=>nil}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 2.1ms | GC: 0.2ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 2.4ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_start_time_outside_business_hours
+---------------------------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"MyString", "description"=>"MyText", "start_time"=>"2024-01-01 07:00:00 +0000", "end_time"=>"2024-11-20 18:09:05 UTC"}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.1ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.1ms)
+Completed 422 Unprocessable Content in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+CalendarsControllerTest: test_should_destroy_calendar
+-----------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mCalendar Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "calendars"[0m
+Started DELETE "/calendars/980190962" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCalendar Load (0.0ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalendar Destroy (0.4ms)[0m  [1m[31mDELETE FROM "calendars" WHERE "calendars"."id" = ?[0m  [["id", 980190962]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/calendars
+Completed 303 See Other in 2ms (ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.2ms)
+  [1m[36mCalendar Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "calendars"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------------------------------------
+CalendarsControllerTest: test_should_NOT_accept_start_time_in_year_2023_or_older
+--------------------------------------------------------------------------------
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started POST "/calendars" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by CalendarsController#create as HTML
+  Parameters: {"calendar"=>{"title"=>"MyString", "description"=>"MyText", "start_time"=>"2023-12-31 10:00:00 +0000", "end_time"=>"2024-11-20 18:09:05 UTC"}}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 1.4ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+PagesControllerTest: test_should_get_home
+-----------------------------------------
+Started GET "/pages/home" for 127.0.0.1 at 2024-11-26 23:06:33 +0000
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-10-28 00:00:00"], ["start_time", "2024-12-01 23:59:59.999999"]]
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.2ms | GC: 0.5ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.0ms | GC: 0.5ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.5ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.6ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m

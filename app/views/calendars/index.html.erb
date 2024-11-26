@@ -4,18 +4,18 @@
 
     <% content_for :title, "Calendars" %>
 
-    <h1 class = "row justify-content-center">Viewing all calendars</h1>
+    <h1 class = "row justify-content-center">Viewing all events</h1>
     <div id="calendars">
       <% @calendars.each do |calendar| %>
         <%= render calendar %>
         <div class="d-grid gap-2">
-          <%= link_to "Show this calendar", calendar, class: "btn btn-info" %>
+          <%= link_to "Show this Event", calendar, class: "btn btn-info" %>
         </div>
       <% end %>
     </div>
     <div class="d-grid gap-2">
-      <%= link_to "New calendar", new_calendar_path, class: "btn btn-success" %>
-      <%= link_to 'Back to Home', root_path, class: 'btn btn-secondary' %>
+      <%= link_to "New event", new_calendar_path, class: "btn btn-success" %>
+      <%= link_to 'Back to Calendar', root_path, class: 'btn btn-secondary' %>
     </div>
     </div>
 </div>
