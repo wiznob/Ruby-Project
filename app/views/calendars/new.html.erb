@@ -1,0 +1,13 @@
+<div class=container>
+  <% content_for :title, "New calendar" %>
+
+  <h1 class = "row justify-content-center text-primary">Create a new event here</h1>
+
+  <%= render "form", calendar: @calendar %>
+
+  <br>
+
+  <div class= "row justify-content-center">
+    <%= link_to "Back to calendars", calendars_path, class: 'btn btn-secondary' %>
+  </div>
+</div>

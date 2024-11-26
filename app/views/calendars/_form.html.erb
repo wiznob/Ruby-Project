@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <%= form_with(model: calendar, local: true, html: { class: "needs-validation", novalidate: true }) do |form| %>
+        <% if calendar.errors.any? %>
+          <div class="alert alert-danger">
+            <h2><%= pluralize(calendar.errors.count, "error") %> prohibited this calendar from being saved:</h2>
+            <ul>
+              <% calendar.errors.each do |error| %>
+                <li><%= error.full_message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="mb-3">
+          <%= form.label :title, class: "form-label" %>
+          <%= form.text_field :title, class: "form-control", required: true %>
+        </div>
+
+        <div class="mb-3">
+          <%= form.label :description, class: "form-label" %>
+          <%= form.text_area :description, class: "form-control", rows: 3, required: true %>
+        </div>
+
+        <div class="mb-3">
+          <%= form.label :start_time, class: "form-label" %>
+          <%= form.datetime_field :start_time, class: "form-control", required: true %>
+        </div>
+
+        <div class="mb-3">
+          <%= form.label :end_time, class: "form-label" %>
+          <%= form.datetime_field :end_time, class: "form-control", required: true %>
+        </div>
+
+        <div class="d-grid gap-2">
+          <%= form.submit "Save Calendar", class: "btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+

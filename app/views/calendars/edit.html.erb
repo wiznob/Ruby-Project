@@ -1,0 +1,12 @@
+<% content_for :title, "Editing calendar" %>
+
+<h1 class = "row justify-content-center text-primary">currently editing calendar.....</h1>
+
+<%= render "form", calendar: @calendar %>
+
+<br>
+
+<div>
+  <%= link_to "Show this calendar", @calendar, class: "btn btn-info" %> |
+  <%= link_to "Back to calendars", calendars_path, class: 'btn btn-secondary'%>
+</div>

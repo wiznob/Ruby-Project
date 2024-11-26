@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <p class="d-inline p-2 bg-primary text-white row justify-content-center d-grid gap-1"><%= notice %></p>
+
+  <%= render @calendar %>
+
+  <div class= "row justify-content-center d-grid gap-2">
+    <%= link_to "Edit this calendar", edit_calendar_path(@calendar), class: "btn btn-secondary" %>
+    <%= link_to "Back to calendars", calendars_path, class: "btn btn-secondary" %>
+    <%= button_to "Destroy this calendar", @calendar, method: :delete, class: "btn btn-danger" %>
+  </div>
+</div>
