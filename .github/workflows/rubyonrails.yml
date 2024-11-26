@@ -36,8 +36,18 @@ jobs:
           gem install bundler
           bundle install
 
+      - name: Run RuboCop
+        run: bundle exec rubocop
+
       - name: Set up database
         run: bundle exec rails db:migrate
 
-      - name: Run tests
+      - name: Run tests with code coverage made by simplecov
         run: bundle exec rails test
+
+      - name: Upload coverage report
+        if: success()
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: coverage/
