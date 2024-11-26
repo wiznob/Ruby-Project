@@ -40,7 +40,8 @@ class CalendarsControllerTest < ActionDispatch::IntegrationTest
 
   test 'should NOT accept empty end time records' do
     post calendars_url,
-         params: { calendar: { title: @calendar.title, description: @calendar.description, start_time: @calendar.start_time,
+         params: { calendar: { title: @calendar.title, description: @calendar.description,
+                               start_time: @calendar.start_time,
                                end_time: nil } }
     assert (400...500).include?(response.code.to_i)   # not ok
   end
@@ -54,7 +55,8 @@ class CalendarsControllerTest < ActionDispatch::IntegrationTest
 
   test 'should NOT accept end time in year 2023 or older' do
     post calendars_url,
-         params: { calendar: { title: @calendar.title, description: @calendar.description, start_time: @calendar.start_time,
+         params: { calendar: { title: @calendar.title, description: @calendar.description,
+                               start_time: @calendar.start_time,
                                end_time: Time.new(2023, 12, 31, 10, 0, 0) } }
     assert (400...500).include?(response.code.to_i)   # not ok
   end
@@ -68,7 +70,8 @@ class CalendarsControllerTest < ActionDispatch::IntegrationTest
 
   test 'should NOT accept end time outside business hours' do
     post calendars_url,
-         params: { calendar: { title: @calendar.title, description: @calendar.description, start_time: @calendar.start_time,
+         params: { calendar: { title: @calendar.title, description: @calendar.description,
+                               start_time: @calendar.start_time,
                                end_time: Time.new(2024, 1, 1, 22, 0, 0) } }
     assert (400...500).include?(response.code.to_i)   # not ok
   end

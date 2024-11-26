@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# This class handles the Calendar and the calendar events
 class CalendarsController < ApplicationController
   before_action :set_calendar, only: %i[show edit update destroy]
 

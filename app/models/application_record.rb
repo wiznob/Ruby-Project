@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# This class handles vladtion when a user wants to create or edit an event in the Calendar
 class ApplicationRecord < ActiveRecord::Base
   primary_abstract_class
   validates :title, :description, :start_time, :end_time, presence: true

@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-module PagesHelper
+module PagesHelper # rubocop:disable Style/Documentation
 end
