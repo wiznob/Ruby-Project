@@ -23,8 +23,6 @@ jobs:
       RACK_ENV: test
 
     steps:
-      - name: Install SQLite3
-        run: sudo apt-get update && sudo apt-get install -y sqlite3 libsqlite3-dev
 
       - name: Checkout code
         uses: actions/checkout@v2
@@ -37,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
-          sudo bundle install
+          bundle install
 
       - name: Run RuboCop
         run: bundle exec rubocop
