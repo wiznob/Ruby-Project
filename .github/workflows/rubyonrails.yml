@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle install
+          sudo bundle install
 
       - name: Run RuboCop
         run: bundle exec rubocop
