@@ -2,7 +2,7 @@
     <h1 class="text-primary">Welcome to your work calendar</h1>
     <p>You can see all upcoming events you have planned here</p>
     <%= month_calendar(events: @calendars) do |date, calendars| %>
-        <div class="border border-success p-2 bg-secondary rounded-top">
+        <div class="border border-success p-2 bg-primary rounded-top">
             <%= date %>
         </div>
         <% calendars.each do |calendar| %>
