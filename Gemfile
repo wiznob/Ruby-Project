@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # my gems
 gem 'rubocop'
 gem 'simple_calendar'
-gem 'simplecov', require: false, group: :test
+gem 'simplecov'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.2.2'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]

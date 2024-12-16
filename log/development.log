@@ -16913,3 +16913,712 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 54ms (Views: 50.1ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 1.9ms)
 
 
+Started GET "/?start_date=2024-11-24" for 127.0.0.1 at 2024-12-12 10:51:17 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-11-24"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.4ms | GC: 0.7ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 17.1ms | GC: 1.4ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | GC: 1.5ms)
+Completed 200 OK in 58ms (Views: 26.5ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 15.5ms)
+
+
+Started GET "/?start_date=2024-12-02" for 127.0.0.1 at 2024-12-12 10:51:19 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-12-02"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.9ms | GC: 0.5ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.7ms | GC: 0.7ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | GC: 0.7ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/?start_date=2025-01-06" for 127.0.0.1 at 2024-12-12 10:51:19 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2025-01-06"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 46.5ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 54.8ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | GC: 0.0ms)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/?start_date=2024-11-24" for 127.0.0.1 at 2024-12-12 10:51:20 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-11-24"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 40.6ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 51.3ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | GC: 0.0ms)
+Completed 200 OK in 63ms (Views: 58.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/?start_date=2024-10-27" for 127.0.0.1 at 2024-12-12 10:51:20 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-10-27"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 38.3ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 47.2ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | GC: 0.0ms)
+Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/?start_date=2024-11-24" for 127.0.0.1 at 2024-12-12 11:05:12 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-11-24"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.8ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 19.3ms | GC: 11.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 25.1ms | GC: 11.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | GC: 11.5ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 11.5ms)
+
+
+Started GET "/?start_date=2024-12-02" for 127.0.0.1 at 2024-12-12 11:05:14 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-12-02"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 26.5ms | GC: 1.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 36.1ms | GC: 1.5ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | GC: 1.5ms)
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.5ms)
+
+
+Started GET "/?start_date=2025-01-06" for 127.0.0.1 at 2024-12-12 11:05:14 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2025-01-06"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 26.3ms | GC: 1.1ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 36.0ms | GC: 1.1ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | GC: 1.1ms)
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 11:05:16 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 5.3ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | GC: 0.2ms)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 11:05:19 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.1ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 11:05:19 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 11:05:19 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 21.1ms | GC: 0.5ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 25.6ms | GC: 0.5ms)
+  Rendered pages/_header.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | GC: 1.0ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 11:05:19 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 11:05:20 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 1.3ms | GC: 0.6ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 11.4ms | GC: 0.6ms)
+  Rendered pages/_header.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | GC: 0.6ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/calendars/10/edit" for 127.0.0.1 at 2024-12-12 11:05:21 +0000
+Processing by CalendarsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/edit.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 9.5ms | GC: 0.0ms)
+  Rendered calendars/edit.html.erb within layouts/application (Duration: 13.2ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | GC: 0.5ms)
+Completed 200 OK in 27ms (Views: 20.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 11:05:22 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 3.6ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 11:05:23 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 11:05:24 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 6.0ms | GC: 0.5ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 7.1ms | GC: 0.5ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.5ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-12 11:05:25 +0000
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.8ms | GC: 0.2ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 8.7ms | GC: 0.3ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | GC: 0.3ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-12 11:14:01 +0000
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.8ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.6ms | GC: 0.5ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.9ms | GC: 0.8ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | GC: 0.9ms)
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 11:33:32 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 3.3ms | GC: 0.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.3ms)
+Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/?start_date=2024-11-24" for 127.0.0.1 at 2024-12-12 12:12:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-11-24"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.5ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.4ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 26.1ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 12:17:36 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 5.7ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-12 12:18:10 +0000
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.4ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.4ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | GC: 0.0ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 12:18:10 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 11.6ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 12:18:10 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 50.8ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 54.5ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 57.9ms | GC: 0.0ms)
+Completed 200 OK in 64ms (Views: 59.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/?start_date=2024-12-02" for 127.0.0.1 at 2024-12-12 12:18:11 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-12-02"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 36.7ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 45.4ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | GC: 0.0ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/?start_date=2025-01-06" for 127.0.0.1 at 2024-12-12 12:18:12 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2025-01-06"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 14.3ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 17.3ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 12:18:12 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.6ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 9.5ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | GC: 0.0ms)
+Completed 200 OK in 28ms (Views: 16.0ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 12:18:14 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 4.1ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/10/edit" for 127.0.0.1 at 2024-12-12 12:18:17 +0000
+Processing by CalendarsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/edit.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 5.3ms | GC: 0.0ms)
+  Rendered calendars/edit.html.erb within layouts/application (Duration: 7.3ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 12:18:17 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 9.7ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 12:18:18 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 6.1ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | GC: 0.0ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 12:18:19 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 9.4ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 10.9ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 48.1ms | GC: 47.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 62.7ms | GC: 47.1ms)
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 47.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-12 12:18:19 +0000
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 19.5ms | GC: 1.7ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 27.4ms | GC: 1.7ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | GC: 3.1ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 3.1ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 12:18:29 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 11.0ms | GC: 1.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | GC: 1.0ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 12:18:30 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 4.9ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 7.3ms | GC: 0.6ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | GC: 0.6ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started POST "/calendars" for 127.0.0.1 at 2024-12-12 12:18:33 +0000
+Processing by CalendarsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "calendar"=>{"title"=>"", "description"=>"", "start_time"=>"", "end_time"=>""}, "commit"=>"Create/Update event"}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 23.1ms | GC: 0.8ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 24.3ms | GC: 0.8ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | GC: 0.8ms)
+Completed 422 Unprocessable Content in 38ms (Views: 29.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started POST "/calendars" for 127.0.0.1 at 2024-12-12 12:18:53 +0000
+Processing by CalendarsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "calendar"=>{"title"=>"sdd", "description"=>"hg", "start_time"=>"2024-12-12T04:00", "end_time"=>""}, "commit"=>"Create/Update event"}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 10.0ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 11.4ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | GC: 0.2ms)
+Completed 422 Unprocessable Content in 22ms (Views: 15.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-12 12:22:52 +0000
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 36.3ms | GC: 1.2ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 47.4ms | GC: 1.2ms)
+  Rendered pages/_header.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | GC: 1.6ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 12:22:53 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 7.5ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | GC: 0.3ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 12:22:53 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 7.7ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 9.1ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | GC: 0.7ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 12:22:54 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 10.6ms | GC: 0.5ms)
+  Rendered pages/_header.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | GC: 0.5ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-12 12:22:54 +0000
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 16.2ms | GC: 0.6ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 22.3ms | GC: 0.6ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | GC: 0.8ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/?start_date=2024-11-24" for 127.0.0.1 at 2024-12-12 12:22:57 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-11-24"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 31.1ms | GC: 0.8ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 41.0ms | GC: 1.3ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | GC: 1.3ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/?start_date=2024-11-24" for 127.0.0.1 at 2024-12-12 12:29:08 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-11-24"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (1.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.1ms | GC: 0.4ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.5ms | GC: 0.6ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | GC: 0.6ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/?start_date=2024-12-02" for 127.0.0.1 at 2024-12-12 12:29:10 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2024-12-02"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 16.4ms | GC: 0.6ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 18.8ms | GC: 0.8ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | GC: 0.8ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/?start_date=2025-01-06" for 127.0.0.1 at 2024-12-12 12:29:10 +0000
+Processing by PagesController#home as HTML
+  Parameters: {"start_date"=>"2025-01-06"}
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 27.4ms | GC: 0.9ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 37.6ms | GC: 0.9ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | GC: 0.9ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/calendars/10" for 127.0.0.1 at 2024-12-12 12:29:11 +0000
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCalendar Load (0.6ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:65:in `set_calendar'
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/show.html.erb within layouts/application
+  Rendered calendars/_calendar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered calendars/show.html.erb within layouts/application (Duration: 6.2ms | GC: 0.6ms)
+  Rendered pages/_header.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | GC: 0.6ms)
+Completed 200 OK in 20ms (Views: 12.7ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 12:33:37 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 8.3ms | GC: 0.4ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 9.7ms | GC: 0.4ms)
+  Rendered pages/_header.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | GC: 0.4ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/calendars" for 127.0.0.1 at 2024-12-12 12:47:53 +0000
+Processing by CalendarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/index.html.erb within layouts/application
+  [1m[36mCalendar Load (2.7ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars"[0m
+  ↳ app/views/calendars/index.html.erb:9
+  Rendered calendars/_calendar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered calendars/index.html.erb within layouts/application (Duration: 11.5ms | GC: 0.4ms)
+  Rendered pages/_header.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | GC: 0.4ms)
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 2.7ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/calendars/new" for 127.0.0.1 at 2024-12-12 12:47:54 +0000
+Processing by CalendarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 2.7ms | GC: 0.0ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.2ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/calendars" for 127.0.0.1 at 2024-12-12 12:47:56 +0000
+Processing by CalendarsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "calendar"=>{"title"=>"", "description"=>"", "start_time"=>"", "end_time"=>""}, "commit"=>"Create/Update event"}
+  Rendering layout layouts/application.html.erb
+  Rendering calendars/new.html.erb within layouts/application
+  Rendered calendars/_form.html.erb (Duration: 7.9ms | GC: 0.2ms)
+  Rendered calendars/new.html.erb within layouts/application (Duration: 8.5ms | GC: 0.3ms)
+  Rendered pages/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | GC: 0.3ms)
+Completed 422 Unprocessable Content in 14ms (Views: 10.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-13 15:01:48 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT "calendars".* FROM "calendars" WHERE "calendars"."start_time" BETWEEN ? AND ?[0m  [["start_time", "2024-11-25 00:00:00"], ["start_time", "2025-01-05 23:59:59.999999"]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.6ms | GC: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (Duration: 18.1ms | GC: 0.0ms)
+  Rendered pages/_header.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 25.6ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
